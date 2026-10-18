@@ -26,6 +26,7 @@ export function CodePlayground({ initialCode, readOnly = false, showRun = true, 
   const [code, setCode] = useState(initialCode)
   const [live, setLive] = useState('')
   const [result, setResult] = useState<RunResult | null>(null)
+  const [loadFailed, setLoadFailed] = useState(false)
 
   const busy = status === 'loading' || status === 'running'
 
@@ -33,7 +34,14 @@ export function CodePlayground({ initialCode, readOnly = false, showRun = true, 
     if (busy) return
     setLive('')
     setResult(null)
-    const r = await run(code, { onStdout: (text) => setLive((prev) => prev + text + '\n') })
+    setLoadFailed(false)
+    let r: RunResult
+    try {
+      r = await run(code, { onStdout: (text) => setLive((prev) => prev + text + '\n') })
+    } catch {
+      setLoadFailed(true) // Python couldn't start; the learner can simply try again
+      return
+    }
     setResult(r)
     onResult?.({ ...r, code })
   }
@@ -119,6 +127,7 @@ export function CodePlayground({ initialCode, readOnly = false, showRun = true, 
               </p>
             </>
           )}
+          {loadFailed && <p className="mt-2 font-sans text-amber-300">{t('editor.loadError')}</p>}
           {result?.timedOut && (
             <p className="mt-2 font-sans text-amber-300">{t('editor.timeout')}</p>
           )}

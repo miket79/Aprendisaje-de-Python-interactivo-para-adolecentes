@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Shell scripts must keep LF line endings (even if someone clones on Windows)
+*.sh text eol=lf
+
+# Binary assets
+*.mp3 binary
+*.png binary
+*.wasm binary

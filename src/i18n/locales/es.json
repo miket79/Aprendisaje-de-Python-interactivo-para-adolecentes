@@ -52,7 +52,8 @@
     "reset": "Restaurar código",
     "hint": "Pista",
     "empty": "(todavía no se ha impreso nada)",
-    "timeout": "Tu código tardó demasiado (¿un bucle infinito?). Python se reinició."
+    "timeout": "Tu código tardó demasiado (¿un bucle infinito?). Python se reinició.",
+    "loadError": "Python no pudo iniciar. Revisa tu conexión a internet y pulsa Ejecutar otra vez."
   },
   "errors": {
     "intro": "Qué significa este error:",

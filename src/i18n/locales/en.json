@@ -52,7 +52,8 @@
     "reset": "Reset code",
     "hint": "Hint",
     "empty": "(nothing printed yet)",
-    "timeout": "Your code took too long (maybe an endless loop?). Python was restarted."
+    "timeout": "Your code took too long (maybe an endless loop?). Python was restarted.",
+    "loadError": "Python couldn’t start. Check your internet connection and press Run again."
   },
   "errors": {
     "intro": "What this error means:",

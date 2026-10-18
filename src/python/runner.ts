@@ -56,19 +56,31 @@ class PythonRunner {
     const worker = new Worker(new URL('./pyodide.worker.ts', import.meta.url), { type: 'module' })
     this.worker = worker
     this.ready = new Promise<void>((resolve, reject) => {
+      const cleanup = () => {
+        worker.removeEventListener('message', onMessage)
+        worker.removeEventListener('error', onError)
+      }
+      const failed = (message: string) => {
+        cleanup()
+        worker.terminate()
+        if (this.worker === worker) this.worker = null
+        this.ready = null
+        this.setStatus('error')
+        reject(new Error(message))
+      }
       const onMessage = (e: MessageEvent<FromWorker>) => {
         if (e.data.type === 'ready') {
-          worker.removeEventListener('message', onMessage)
+          cleanup()
           this.setStatus('ready')
           resolve()
         } else if (e.data.type === 'init-error') {
-          worker.removeEventListener('message', onMessage)
-          this.setStatus('error')
-          this.ready = null
-          reject(new Error(e.data.error))
+          failed(e.data.error)
         }
       }
+      // The worker script itself couldn't load (e.g. offline before the app was cached).
+      const onError = (e: ErrorEvent) => failed(e.message || 'Python worker failed to load')
       worker.addEventListener('message', onMessage)
+      worker.addEventListener('error', onError)
       worker.postMessage({ type: 'init', indexURL: PYODIDE_URL() } satisfies ToWorker)
     })
     return this.ready

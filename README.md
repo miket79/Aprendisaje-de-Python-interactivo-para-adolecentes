@@ -8,7 +8,7 @@ The curriculum follows the topic order of [30 Days Of Python](https://github.com
 ## Quick start (macOS)
 
 ```bash
-brew install node@22 python@3.12   # once
+brew install node python@3.12      # once (or the Node.js LTS installer from nodejs.org)
 npm install
 npm run dev                        # http://localhost:5173
 ```

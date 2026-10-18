@@ -21,7 +21,7 @@
 | Herramienta | Versión | Cómo instalar |
 |---|---|---|
 | Homebrew | la más reciente | <https://brew.sh> |
-| Node.js | 22 LTS (≥ 22.12) | `brew install node@22` o el instalador de <https://nodejs.org> |
+| Node.js | 22.12 o superior (LTS recomendado) | `brew install node` o el instalador LTS de <https://nodejs.org>. Evita `node@22`: Homebrew no lo agrega al PATH. |
 | Python (para generar las voces) | 3.10 a 3.13 (recomendado 3.12) | `brew install python@3.12`. El Python 3.9 que trae macOS **no** sirve. |
 | Git | cualquiera | Ya lo tienes |
 | Editor (opcional) | VS Code | <https://code.visualstudio.com> |
