@@ -1,0 +1,4 @@
+# Local, free neural text-to-speech (Kokoro-82M, Apache-2.0) via ONNX Runtime.
+# Needs Python 3.10–3.13.
+kokoro-onnx==0.6.1
+soundfile==0.14.0

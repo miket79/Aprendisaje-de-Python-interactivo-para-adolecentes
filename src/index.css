@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Lexend was designed to make reading easier, which helps every learner. */
+  --font-sans: 'Lexend Variable', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+  --color-py-blue: #3776ab;
+  --color-py-yellow: #ffd43b;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  @apply min-h-screen bg-sky-50 font-sans text-slate-900 antialiased;
+}
+
+.cm-editor {
+  font-family: var(--font-mono);
+}
+
+.cm-editor.cm-focused {
+  outline: 3px solid color-mix(in srgb, var(--color-py-blue) 40%, transparent);
+}

@@ -1,0 +1,151 @@
+{
+  "id": "day-01",
+  "day": 1,
+  "minutes": 12,
+  "title": { "en": "Hello, Python!", "es": "¡Hola, Python!" },
+  "summary": {
+    "en": "Write your first lines of code with print() and let Python do some math.",
+    "es": "Escribe tus primeras líneas de código con print() y deja que Python haga cuentas."
+  },
+  "steps": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "xp": 5,
+      "title": { "en": "Meet Pip", "es": "Conoce a Pip" },
+      "body": {
+        "en": "Hey, I'm **Pip**! Over the next 30 days you'll learn **Python**, a language used for games, websites, apps and almost every AI project.\n\nNo experience needed. Each day takes about 15 minutes, and you'll write real code from the very first one.",
+        "es": "¡Hola, soy **Pip**! En los próximos 30 días vas a aprender **Python**, un lenguaje que se usa para juegos, sitios web, apps y casi todos los proyectos de inteligencia artificial.\n\nNo necesitas experiencia. Cada día dura unos 15 minutos, y vas a escribir código real desde el primero."
+      },
+      "voice": {
+        "en": "Hey, I'm Pip! Over the next thirty days you'll learn Python, a language used for games, websites, apps, and almost every A.I. project. No experience needed. Each day takes about fifteen minutes, and you'll write real code from the very first one.",
+        "es": "¡Hola, soy Pip! En los próximos treinta días vas a aprender Python, un lenguaje que se usa para juegos, sitios web, aplicaciones y casi todos los proyectos de inteligencia artificial. No necesitas experiencia. Cada día dura unos quince minutos, y vas a escribir código real desde el primero."
+      }
+    },
+    {
+      "id": "predict",
+      "kind": "predict",
+      "xp": 10,
+      "title": { "en": "Predict first", "es": "Primero, predice" },
+      "body": {
+        "en": "Before running anything, **guess**: what will this code show on the screen?",
+        "es": "Antes de ejecutar nada, **adivina**: ¿qué mostrará este código en la pantalla?"
+      },
+      "voice": {
+        "en": "Before running anything, make a guess. What will this code show on the screen? Guessing first, even if you're wrong, helps your brain remember.",
+        "es": "Antes de ejecutar nada, haz una predicción. ¿Qué mostrará este código en la pantalla? Adivinar primero, aunque te equivoques, ayuda a tu cerebro a recordar."
+      },
+      "code": { "en": "print(\"Hello, world!\")", "es": "print(\"¡Hola, mundo!\")" },
+      "choices": [
+        { "en": "Hello, world!", "es": "¡Hola, mundo!" },
+        { "en": "print(\"Hello, world!\")", "es": "print(\"¡Hola, mundo!\")" },
+        { "en": "Nothing, it's an error", "es": "Nada, es un error" }
+      ],
+      "answer": 0,
+      "explain": {
+        "en": "`print()` shows whatever is inside the parentheses. The quotes tell Python it's **text** (a *string*), so the quotes themselves don't appear.",
+        "es": "`print()` muestra lo que está dentro de los paréntesis. Las comillas le dicen a Python que es **texto** (un *string*), por eso las comillas no aparecen."
+      }
+    },
+    {
+      "id": "run",
+      "kind": "run",
+      "xp": 10,
+      "title": { "en": "Run it", "es": "Ejecútalo" },
+      "body": {
+        "en": "Press **Run** and check the output. Look at the last line: no quotes, so Python does the math.",
+        "es": "Pulsa **Ejecutar** y revisa la salida. Mira la última línea: no tiene comillas, así que Python hace la cuenta."
+      },
+      "voice": {
+        "en": "Now press Run and check the output. Look at the last line. There are no quotes, so Python does the math.",
+        "es": "Ahora pulsa Ejecutar y revisa la salida. Mira la última línea. No tiene comillas, así que Python hace la cuenta."
+      },
+      "code": {
+        "en": "print(\"Hello, world!\")\nprint(\"I'm learning Python\")\nprint(2 + 3)",
+        "es": "print(\"¡Hola, mundo!\")\nprint(\"Estoy aprendiendo Python\")\nprint(2 + 3)"
+      }
+    },
+    {
+      "id": "investigate",
+      "kind": "investigate",
+      "xp": 10,
+      "title": { "en": "Investigate", "es": "Investiga" },
+      "body": {
+        "en": "These two lines look almost the same, but they print different things. **Why?**",
+        "es": "Estas dos líneas se parecen mucho, pero imprimen cosas distintas. **¿Por qué?**"
+      },
+      "voice": {
+        "en": "These two lines look almost the same, but they print different things. Why do you think that happens?",
+        "es": "Estas dos líneas se parecen mucho, pero imprimen cosas distintas. ¿Por qué crees que pasa eso?"
+      },
+      "code": "print(\"2 + 3\")\nprint(2 + 3)",
+      "choices": [
+        {
+          "en": "Quotes turn it into text, so Python doesn't calculate it",
+          "es": "Las comillas lo convierten en texto, así que Python no lo calcula"
+        },
+        { "en": "The second line has a bug", "es": "La segunda línea tiene un error" },
+        { "en": "Python picks randomly", "es": "Python elige al azar" }
+      ],
+      "answer": 0,
+      "explain": {
+        "en": "`\"2 + 3\"` is a string, so Python prints it exactly as written. `2 + 3` is a math expression, so Python calculates `5` first.",
+        "es": "`\"2 + 3\"` es un string, así que Python lo imprime tal cual. `2 + 3` es una expresión matemática, así que Python calcula `5` primero."
+      }
+    },
+    {
+      "id": "modify",
+      "kind": "modify",
+      "xp": 15,
+      "title": { "en": "Make it yours", "es": "Hazlo tuyo" },
+      "body": {
+        "en": "Change the message so Python says hi to **you**. For example: `print(\"Hi, I'm Alex\")`",
+        "es": "Cambia el mensaje para que Python **te** salude a ti. Por ejemplo: `print(\"Hola, soy Alex\")`"
+      },
+      "voice": {
+        "en": "Your turn. Change the message so Python says hi to you. You can use your name or a nickname.",
+        "es": "Tu turno. Cambia el mensaje para que Python te salude a ti. Puedes usar tu nombre o un apodo."
+      },
+      "code": { "en": "print(\"Hello, world!\")", "es": "print(\"¡Hola, mundo!\")" },
+      "check": { "outputNot": ["Hello, world!", "¡Hola, mundo!"] },
+      "hint": {
+        "en": "Only change the text **inside** the quotes. Keep the parentheses and quotes.",
+        "es": "Cambia solo el texto **dentro** de las comillas. Deja los paréntesis y las comillas."
+      }
+    },
+    {
+      "id": "make",
+      "kind": "make",
+      "xp": 25,
+      "title": { "en": "Mini challenge", "es": "Mini reto" },
+      "body": {
+        "en": "Write **3 lines** with `print()`:\n\n1. Your name or nickname\n2. Something you're into (a game, sport, show, song...)\n3. A math result, like how many hours are in 30 days: `30 * 24`",
+        "es": "Escribe **3 líneas** con `print()`:\n\n1. Tu nombre o apodo\n2. Algo que te guste (un juego, deporte, serie, canción...)\n3. Un resultado matemático, como cuántas horas hay en 30 días: `30 * 24`"
+      },
+      "voice": {
+        "en": "Mini challenge! Write three lines with print. One: your name or nickname. Two: something you're into, like a game, a sport, or a song. Three: a math result, like how many hours there are in thirty days.",
+        "es": "¡Mini reto! Escribe tres líneas con print. Una: tu nombre o apodo. Dos: algo que te guste, como un juego, un deporte o una canción. Tres: un resultado matemático, como cuántas horas hay en treinta días."
+      },
+      "code": "# Write your 3 lines below\n",
+      "check": { "minLines": 3, "codeIncludes": ["*"] },
+      "hint": {
+        "en": "Use three separate `print()` lines. For the math one, **don't** use quotes: `print(30 * 24)`",
+        "es": "Usa tres líneas `print()` separadas. En la de la cuenta **no** uses comillas: `print(30 * 24)`"
+      }
+    },
+    {
+      "id": "wrap",
+      "kind": "intro",
+      "xp": 5,
+      "title": { "en": "You did it!", "es": "¡Lo lograste!" },
+      "body": {
+        "en": "Today you learned:\n\n- `print()` shows things on the screen\n- Text goes inside quotes, numbers and math don't\n- Python can calculate for you\n\n**Tomorrow:** variables, which let Python *remember* things.",
+        "es": "Hoy aprendiste:\n\n- `print()` muestra cosas en la pantalla\n- El texto va entre comillas, los números y las cuentas no\n- Python puede calcular por ti\n\n**Mañana:** variables, que permiten que Python *recuerde* cosas."
+      },
+      "voice": {
+        "en": "You did it! Today you learned that print shows things on the screen, that text goes inside quotes, and that Python can do math for you. Tomorrow: variables, which let Python remember things. See you then!",
+        "es": "¡Lo lograste! Hoy aprendiste que print muestra cosas en la pantalla, que el texto va entre comillas, y que Python puede hacer cuentas por ti. Mañana: variables, que permiten que Python recuerde cosas. ¡Nos vemos!"
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "app": {
+    "title": "Python Quest",
+    "tagline": "30 días. Código real. A tu ritmo."
+  },
+  "nav": {
+    "home": "Mapa",
+    "language": "Idioma",
+    "voiceOn": "Voz activada",
+    "voiceOff": "Voz apagada"
+  },
+  "home": {
+    "day": "Día {{n}}",
+    "start": "Empezar",
+    "continue": "Continuar",
+    "review": "Repetir",
+    "soon": "Muy pronto",
+    "xp": "{{xp}} XP",
+    "streak_one": "Racha de {{count}} día",
+    "streak_other": "Racha de {{count}} días",
+    "credit": "Currículo inspirado en “30 Days Of Python” de Asabeneh Yetayeh. Lecciones reescritas para adolescentes."
+  },
+  "lesson": {
+    "next": "Siguiente",
+    "back": "Atrás",
+    "check": "Comprobar",
+    "tryAgain": "Casi. Mira la salida e inténtalo otra vez.",
+    "correct": "¡Bien! +{{xp}} XP",
+    "finish": "Terminar el día",
+    "done": "¡Día completado! Ganaste {{xp}} XP.",
+    "backToMap": "Volver al mapa",
+    "listen": "Escuchar",
+    "stop": "Detener voz",
+    "progress": "Paso {{current}} de {{total}}",
+    "runFirst": "Ejecuta el código para continuar.",
+    "notFound": "Ese día todavía no está listo.",
+    "stages": {
+      "intro": "Intro",
+      "predict": "Predice",
+      "run": "Ejecuta",
+      "investigate": "Investiga",
+      "modify": "Modifica",
+      "make": "Crea"
+    }
+  },
+  "editor": {
+    "label": "Editor de código Python",
+    "run": "Ejecutar",
+    "running": "Ejecutando…",
+    "loading": "Despertando a Python…",
+    "output": "Salida",
+    "reset": "Restaurar código",
+    "hint": "Pista",
+    "empty": "(todavía no se ha impreso nada)",
+    "timeout": "Tu código tardó demasiado (¿un bucle infinito?). Python se reinició."
+  },
+  "errors": {
+    "intro": "Qué significa este error:",
+    "SyntaxError": "Python no pudo leer una línea. Revisa si falta una comilla, un paréntesis o dos puntos.",
+    "IndentationError": "Los espacios al inicio de una línea no coinciden. Python usa la sangría para agrupar código.",
+    "NameError": "Usaste un nombre que Python aún no conoce. Revisa la ortografía o crea la variable primero.",
+    "TypeError": "Mezclaste tipos que no funcionan juntos, como sumar texto y un número. Prueba str() o int().",
+    "ValueError": "El tipo es correcto pero el valor no, como int(\"hola\").",
+    "ZeroDivisionError": "Dividiste entre cero. ¡Ni Python puede hacer eso!",
+    "IndexError": "Pediste una posición que no existe en la lista. Recuerda: se empieza a contar desde 0.",
+    "KeyError": "Esa clave no está en el diccionario. Revisa la ortografía.",
+    "AttributeError": "Ese valor no tiene el método o propiedad que usaste. Revisa la ortografía.",
+    "EOFError": "Tu código pidió input(), pero no había nada que leer.",
+    "generic": "Lee la última línea del error: dice cuál es el problema y en qué línea está."
+  },
+  "terms": {
+    "title": "Antes de empezar",
+    "body": "Python Quest sigue el orden de temas de **30 Days Of Python**, un repositorio gratuito en GitHub de Asabeneh Yetayeh. Python Quest es un proyecto independiente: ese autor no lo creó, no lo revisó ni lo respalda.\n\nEl repositorio original no incluye una licencia, así que su autor conserva los derechos sobre sus textos, código e imágenes.\n\nAl continuar, aceptas que:\n\n- Usas esta app, y cualquier contenido tomado o basado en el repositorio 30 Days Of Python, **bajo tu propia responsabilidad personal**.\n- Lo usarás solo para aprender por tu cuenta, y no copiarás, publicarás ni venderás material del repositorio original sin el permiso de su autor.\n- Si quieres usar el material original para otra cosa, primero le pedirás permiso a su autor.",
+    "minors": "Si tienes menos de 18 años, lee esto con tu madre, padre o tutor.",
+    "original": "Ver el repositorio original",
+    "checkbox": "Leí esto y acepto la responsabilidad personal por el uso que haga de este contenido.",
+    "accept": "Aceptar y continuar",
+    "decline": "No acepto",
+    "close": "Cerrar",
+    "savedLocally": "Tu respuesta se guarda solo en este dispositivo.",
+    "acceptedOn": "Aceptado el {{date}}",
+    "declinedTitle": "Necesitas aceptar para usar Python Quest",
+    "declinedBody": "No pasa nada. Puedes aprender directamente con el repositorio original.",
+    "reviewAgain": "Volver a leer el aviso",
+    "link": "Aviso de responsabilidad"
+  },
+  "pwa": {
+    "install": "Instalar app",
+    "installHint": "Instala Python Quest para usarlo sin internet",
+    "offlineReady": "Python Quest ya funciona sin internet.",
+    "updateAvailable": "Hay una nueva versión de Python Quest.",
+    "update": "Actualizar",
+    "dismiss": "Cerrar"
+  }
+}

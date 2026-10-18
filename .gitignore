@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies & build output
+node_modules
+dist
+dist-ssr
+coverage
+*.local
+.env
+.env.*
+
+# Standalone executables (build with: npm run package)
+release/
+tools/launcher/build/
+tools/launcher/web/*
+!tools/launcher/web/.gitkeep
+
+# Voice-over tooling (big files, re-downloadable)
+tools/tts/.venv/
+tools/tts/models/
+__pycache__/
+
+# Copies of files shared in the Claude chat
+Claude outputs/
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.sw?
